@@ -20,5 +20,5 @@ export default {
     },
   ],
   external: Object.keys(pkg.dependencies),
-  plugins: [peerDepsExternal(), resolve(), commonjs(), /* terser() */, typescript()],
+  plugins: [peerDepsExternal(), resolve(), commonjs(), terser(), typescript()],
 };
