@@ -410,10 +410,10 @@
   dependencies:
     "@floating-ui/core" "^1.0.4"
 
-"@force-dev/utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@force-dev/utils/-/utils-1.1.1.tgz#43296831899e86e9770ef93d1a3915e5d6763c3a"
-  integrity sha512-fwOMQ40u/HmUDsNptMSmFb6KalFGWVOo0VTF9IGTQwdOjMImqIDHfh3mITfq/yt+q+ibsn7ra+PFmyJtk+EYAw==
+"@force-dev/utils@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@force-dev/utils/-/utils-1.1.4.tgz#148653fbdf2fe6f4455d0953c984347d41c6116f"
+  integrity sha512-WEcgr6qVM4cN9Jsmui7zKne8uNB2DBXO8aT3syIzalwejeU0iGY+UYRuTBpLQCBAMzD0q3zTZXZgoPaytWjkGg==
   dependencies:
     "@types/luxon" "^3.1.0"
     inversify "^6.0.1"

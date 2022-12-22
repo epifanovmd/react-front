@@ -1,29 +1,45 @@
 {
   "name": "@force-dev/react-front",
-  "version": "1.0.4",
-  "main": "lib/index.cjs",
-  "module": "lib/index.mjs",
-  "types": "lib/index.d.ts",
+  "version": "1.0.10",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
   "files": [
     "lib/",
     "README.md"
   ],
+  "sideEffects": false,
+  "license": "MIT",
+  "engines": {
+    "npm": ">=8.5.0",
+    "yarn": ">=1.22.18",
+    "node": ">=16.14.2"
+  },
+  "homepage": "https://github.com/epifanovmd/react-front",
+  "author": {
+    "name": "Epifanov Andrei",
+    "email": "epifanovmd@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epifanovmd/react-front.git"
+  },
   "scripts": {
     "VERSION:PATCH": "npm version patch",
     "VERSION:MINOR": "npm version minor",
     "VERSION:MAJOR": "npm version major",
-    "build": "rollup -c --bundleConfigAsCjs",
+    "build": "rollup -c --bundleConfigAsCjs && npm run types",
     "start": "rollup -c -w --bundleConfigAsCjs",
+    "types": "tsc --emitDeclarationOnly",
     "RM": "rm -rf ../react-ssr/node_modules/@force-dev/react-front & mkdir ../react-ssr/node_modules/@force-dev/react-front",
     "COPY": "npm run RM & cp package.json ../react-ssr/node_modules/@force-dev/react-front & cp -R lib ../react-ssr/node_modules/@force-dev/react-front",
     "lint:fix": "eslint --fix \"**/*{.ts,.tsx}\"",
     "prettier:fix": "prettier --parser typescript --write src/**/*.{json,ts,tsx}",
     "check-packages-updates": "yarn outdated"
   },
-  "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
-    "@force-dev/utils": "^1.1.1",
+    "@force-dev/utils": "^1.1.4",
     "body-scroll-lock": "^4.0.0-beta.0",
     "date-fns": "^2.29.3",
     "lodash": "^4.17.21",
