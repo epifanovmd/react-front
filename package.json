@@ -1,6 +1,6 @@
 {
   "name": "@force-dev/react-front",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.cjs",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
@@ -9,6 +9,9 @@
     "README.md"
   ],
   "scripts": {
+    "VERSION:PATCH": "npm version patch",
+    "VERSION:MINOR": "npm version minor",
+    "VERSION:MAJOR": "npm version major",
     "build": "rollup -c --bundleConfigAsCjs",
     "start": "rollup -c -w --bundleConfigAsCjs",
     "RM": "rm -rf ../react-ssr/node_modules/@force-dev/react-front & mkdir ../react-ssr/node_modules/@force-dev/react-front",
