@@ -1,5 +1,3 @@
-import "./indes.css";
-
 import { CloseOutlined } from "@ant-design/icons";
 import {
   Button,
