@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 
-import { useCompoundProps } from "../../../common/hooks/useCompoundProps";
+import { useCompoundProps } from "../../../common";
 import { Checkbox, ICheckboxProps } from "./Checkbox";
 
 export interface ICheckboxGroupProps<T extends any = unknown>
