@@ -17,6 +17,7 @@ const config = defineConfig({
       preserveModules: true,
       preserveModulesRoot: "src",
       sourcemap: true,
+      assetFileNames: "[name][extname]",
     },
     {
       dir: "./lib/esm",
@@ -25,6 +26,7 @@ const config = defineConfig({
       preserveModules: true,
       preserveModulesRoot: "src",
       sourcemap: true,
+      assetFileNames: "[name][extname]",
     },
   ],
   external: /node_modules/,
@@ -35,15 +37,7 @@ const config = defineConfig({
     terser(),
     typescript({ declaration: false, declarationDir: undefined }),
     styles({
-      mode: [
-        "inject",
-        {
-          container: "head",
-          singleTag: true,
-          prepend: true,
-          attributes: { id: "global" },
-        },
-      ],
+      mode: ["extract", "index.css"],
     }),
   ],
 });
