@@ -24,7 +24,7 @@ interface ICheckboxGroupStatic {
   ) => null;
 }
 
-export const _CheckboxGroup: FC<PropsWithChildren<ICheckboxGroupProps>> &
+const _CheckboxGroup: FC<PropsWithChildren<ICheckboxGroupProps>> &
   ICheckboxGroupStatic = ({
   items,
   defaultValue,
