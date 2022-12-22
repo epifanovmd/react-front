@@ -31,12 +31,4 @@
     "resolveJsonModule": true,
     "skipLibCheck": true
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "**/Playground.tsx"
-  ],
-  "include": [
-    "src"
-  ]
 }

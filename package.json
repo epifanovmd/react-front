@@ -8,9 +8,6 @@
     "lib/",
     "README.md"
   ],
-  "plugins": [
-    "react"
-  ],
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "start": "rollup -c -w --bundleConfigAsCjs",
@@ -24,9 +21,22 @@
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@force-dev/utils": "^1.1.1",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "date-fns": "^2.29.3",
     "lodash": "^4.17.21",
     "mobx": "^6.7.0",
     "mobx-react-lite": "^3.4.0",
+    "rc-drawer": "^6.1.0",
+    "rc-input": "^0.1.4",
+    "rc-tabs": "^12.5.3",
+    "rc-textarea": "^0.4.7",
+    "rc-tooltip": "^5.2.2",
+    "react-datepicker": "^4.8.0",
+    "react-modal": "^3.16.1",
+    "react-select": "^5.7.0",
+    "react-switch": "^7.0.0",
+    "react-text-mask": "^5.5.0",
+    "styled-components": "^5.3.6",
     "yup": "0.29.3"
   },
   "peerDependencies": {
@@ -40,16 +50,26 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.2.0",
     "@rollup/plugin-typescript": "^10.0.1",
+    "@types/body-scroll-lock": "^3.1.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.26",
+    "@types/react-datepicker": "^4.8.0",
+    "@types/react-modal": "^3.13.1",
+    "@types/react-text-mask": "^5.4.11",
+    "@types/styled-components": "^5.1.26",
     "@types/yup": "0.29.14",
     "@typescript-eslint/parser": "^5.47.0",
     "eslint": "8.22.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "node-sass": "^8.0.0",
     "prettier": "^2.8.1",
+    "react": ">=18",
+    "react-dom": ">=18",
     "rollup": "^3.7.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-styles": "^4.0.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4"
   }

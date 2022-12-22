@@ -1,0 +1,31 @@
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0000001f;
+  height: 18px;
+  width: 18px;
+  padding: 1px;
+  margin-right: 16px;
+}
+
+.checkbox-button {
+  padding: 8px;
+  border: 1px solid #0000001f;
+  border-right-width: 0;
+  cursor: pointer;
+}
+
+.checkbox-button__active {
+  background: #0c78ed;
+  border-color: #0c78ed;
+  color: #fff;
+}

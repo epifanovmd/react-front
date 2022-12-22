@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
 import { toLowerCase } from "@force-dev/utils";
+import React, { useMemo } from "react";
 
 interface Iterable<T> {
   [Symbol.iterator](): Iterator<T>;
@@ -12,7 +12,10 @@ const filterElements = (
 ): React.ReactElement[] =>
   generateArray(function* () {
     for (const c of toIterable(peers)) {
-      if (c && React.isValidElement(c) && (!predicate || predicate(c))) {
+      if (
+        typeof c === "string" ||
+        (c && React.isValidElement(c) && (!predicate || predicate(c)))
+      ) {
         yield c as React.ReactElement;
       }
     }

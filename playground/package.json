@@ -1,0 +1,22 @@
+{
+  "name": "@force-dev/react-front",
+  "version": "1.0.2",
+  "scripts": {
+    "dev": "vite",
+    "link:lib": "npm i",
+    "lint:fix": "eslint --fix \"**/*{.ts,.tsx}\"",
+    "prettier:fix": "prettier --parser typescript --write src/**/*.{json,ts,tsx}",
+    "check-packages-updates": "yarn outdated"
+  },
+  "dependencies": {
+    "@force-dev/react-front": "file:../../react-front",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.4",
+    "@vitejs/plugin-react": "^3.0.0",
+    "vite": "^4.0.2"
+  }
+}

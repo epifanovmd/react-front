@@ -1,0 +1,36 @@
+.button {
+  padding: 0 16px;
+  height: 44px;
+  line-height: 42px;
+  border: 1px solid #0000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  max-width: 100%;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  background-color: #0c78ed;
+  color: #fff;
+  cursor: pointer;
+  :hover {
+    background: #2284ef;
+    color: #fff;
+  }
+}
+
+.button__disabled {
+  background-color: #0c78ed50;
+  color: #fff;
+  cursor: default;
+
+  &:hover {
+    background-color: #0c78ed50;
+    color: #fff;
+  }
+}

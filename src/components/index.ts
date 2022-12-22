@@ -1,2 +1,2 @@
 export * from "./common";
-export * from "./Playground";
+export * from "./ui";
