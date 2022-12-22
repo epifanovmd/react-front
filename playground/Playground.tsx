@@ -1,3 +1,5 @@
+import "@force-dev/react-front/lib/esm/index.css";
+
 import { CloseOutlined } from "@ant-design/icons";
 import {
   Button,
