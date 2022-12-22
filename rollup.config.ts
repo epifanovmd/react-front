@@ -29,7 +29,7 @@ const config = defineConfig({
       assetFileNames: "[name][extname]",
     },
   ],
-  external: /node_modules/,
+  external: [/node_modules/, "tslib"],
   plugins: [
     peerDepsExternal(),
     resolve(),
