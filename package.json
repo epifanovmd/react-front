@@ -28,7 +28,7 @@
     "VERSION:PATCH": "npm version patch",
     "VERSION:MINOR": "npm version minor",
     "VERSION:MAJOR": "npm version major",
-    "build": "rollup -c --bundleConfigAsCjs && npm run types",
+    "build": "rm -rf lib && rollup -c --bundleConfigAsCjs && npm run types",
     "start": "rollup -c -w --bundleConfigAsCjs",
     "types": "tsc --emitDeclarationOnly",
     "RM": "rm -rf ../react-ssr/node_modules/@force-dev/react-front & mkdir ../react-ssr/node_modules/@force-dev/react-front",

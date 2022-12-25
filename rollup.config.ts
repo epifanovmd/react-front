@@ -18,6 +18,7 @@ const config = defineConfig({
       preserveModulesRoot: "src",
       sourcemap: true,
       assetFileNames: "[name][extname]",
+      interop: "compat",
     },
     {
       dir: "./lib/esm",
@@ -27,6 +28,7 @@ const config = defineConfig({
       preserveModulesRoot: "src",
       sourcemap: true,
       assetFileNames: "[name][extname]",
+      interop: "compat",
     },
   ],
   external: [/node_modules/, "tslib"],
