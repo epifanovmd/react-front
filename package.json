@@ -1,6 +1,6 @@
 {
   "name": "@force-dev/react-front",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/types/index.d.ts",
